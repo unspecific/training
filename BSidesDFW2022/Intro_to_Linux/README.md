@@ -10,6 +10,7 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
 - Follow the prompts
 - Live Boot vs Install
 - Partitioning - Why change the default
+
 ## Shells
 - bash
     - CLI interface
@@ -39,6 +40,7 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
     - ? for anyting 1 time
 - passwd - CHANGE YOUR PASSWORD
 - clear
+
 ## Users vs Root
 - User level access
     - PATH
@@ -51,6 +53,7 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
 - sudo - SuperUser DO
     - Needs YOUR password
     - similar to runas
+
 ## Files
 - Every thing is a file
     - You interact with everything as a file
@@ -70,6 +73,7 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
         - -S - sort by size
         - -r - reverse sorting
     - file - identify a FILE
+
 ## Directory Structure
 - Common places
     - /etc - config
@@ -90,42 +94,56 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
     - cd - Change Directory
     - pwd - Present WOrking DIrectory
     - ~ - Shortcut for $HOME
-    - GUI
+    - GUI - See DEMO
 - Manipulation
-    - mkdir
-    - rmdir
-    -
+    - mkdir - MaKe DIRectory
+      - -p - creat all directories in the path that do not already exist
+    - rmdir - ReMove DIRectory
+      - Only is the directory is empty
+      - -p - same as above, will remove all directories in the path if they are empty
 - Manipulation
-    - cat
-    - less/more
-    - head
-    - tail
+    - cat - concatenate - Send contents of a file to STDOUT in the order they are read
+    - less/more - View (readonly) contents of a file with options for pagination, search, and other options
+    - head - Display the top lines of a file
+      - default is 10 lines
+      - Specify number of lines to display
+    - tail - Same as head, but for the bottom
     -
+
 ## Package Management
-- Updates
-    - GUI
-    - CLI
-- Searching for apps
-- Installing apps
+  - GUI
+  - CLI
+    - apt - Advanced Package Tool
+      - wrapper for tools like apt-get apt-search
+      - apt update - Update the package list from designated repos
+      - apt upgrade - Upgrade packages that have an new package available
+      - apt search - Search for a package
+      - apt install - Install a specific package
+      - apt remove - Uninstall a package
+      - apt autoremove - Uninstall packages that are no longer necessary i.e. Old Kernels
+
 ## Command Line Output
 - Types
 - Piping
 - Redirection
 - Chaining Commands
+
 ## Environment
 - Environment Variables
 - Aliases
 - ~/.bashrc
+
 ## File Permissions
 - chown
 - chmod
+
 ## Job management
 - ^z  
 - bg
 - fg
 - jobs
 
-## Bonus: How to exit vim
+# Bonus: How to exit vim
 - How to exit VI/VIM
     - Hit <esc> to make sure you are not in input mode
     - Type ':q' and it should appear in the bottom left  
