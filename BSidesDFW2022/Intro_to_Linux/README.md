@@ -95,12 +95,13 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
 
 ## File Permissions
 - What are file permissions?
-  - ```
+```
 $ ls -l /etc/services
 -rw-r--r-- 1 root root 12813 Mar 27  2021 /etc/services
 $ ls -l /bin/bash
 -rwxr-xr-x 1 root root 1234376 Aug  4  2021 /bin/bash
 ```
+
   - Positions in the ls
     - ♦--------- - First is the file type
       - d is a directory
