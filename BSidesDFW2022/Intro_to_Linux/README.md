@@ -26,33 +26,52 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
 - who/w/id
     - identify who you are and who is/has used the system
 - env
-    - Environment variables,
-- $PATH
-    - Never add '.' in your path
-- ~/.bashrc
-    - Shell script
-    - Alias
-    - PATH
-    - prompt
-    - History
+    - Environment variables
+    - Covered in detail in next Section
 - Wildcards
     - * for anything any number of times
     - ? for anyting 1 time
 - passwd - CHANGE YOUR PASSWORD
 - clear
 
+## Environment
+- Environment Variables
+  - PATH - Used to specify the path to search for binaries when typing commands
+  - _ - current command
+  - VISUAL - Default editor for many apps that auto open and editor
+  - USER - Current username
+  - HOME - Your Home directory
+  - SHELL - Current shell
+  - PWD - Present Working Directory
+- ~/.bashrc
+  - Location to set environment variables and aliases
+  - Shell script
+  - Aliases
+  - PATH
+  - prompt
+  - History
+- Aliases
+  - Simple replacements
+  - commonly set up
+    - ll = ls -l
+    - la = ls -a
+
 ## Users vs Root
 - User level access
-    - PATH
+    - PATH - will include binary locations such as /bin /usr/bin
+    - Permission - Can only access files that have specific permissions for this user or any groups the user is part of.
 - Root level access
-    - PATH
+    - PATH - will add locations like /sbin /usr/sbin
+    - Permission - Can access almost any file on the system
 - su - SuperUser
     - Needs the password (unless you are root)
     - Default superuser
     - Can be used to log into any user
+      - su <username>
 - sudo - SuperUser DO
     - Needs YOUR password
     - similar to runas
+    - sudo -u <username> - run a command as another user
 
 ## Files
 - Every thing is a file
@@ -92,7 +111,7 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
     - /mnt
 - Movement within the Directory Structure
     - cd - Change Directory
-    - pwd - Present WOrking DIrectory
+    - pwd - Present Working Directory
     - ~ - Shortcut for $HOME
     - GUI - See DEMO
 - Manipulation
@@ -124,14 +143,18 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
 
 ## Command Line Output
 - Types
+  - STDOUT
+  - STDERR
 - Piping
+  - | used to send the output of one command to the input of another
+  - Some commands will have to specify STDIN as the input, usually with -
 - Redirection
+  - > - Used to redirect STDOUT
+  - 2> - Used to redirect STDERR
+  - 2>&1 - Used to redirect STDERR to STDOUT
+  - tee - command to output to a file and STDOUT at the same time
 - Chaining Commands
 
-## Environment
-- Environment Variables
-- Aliases
-- ~/.bashrc
 
 ## File Permissions
 - chown
