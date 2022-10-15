@@ -29,7 +29,7 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
     - Environment variables
     - Covered in detail in next Section
 - Wildcards
-    - * for anything any number of times
+    - \* for anything any number of times
     - ? for anyting 1 time
 - passwd - CHANGE YOUR PASSWORD
 - clear
@@ -110,13 +110,13 @@ $ ls -l /bin/bash
       - l is a symbolic link
       - p is a first-in,first-out (FIFO)
       - s is a local socket
-      - - is an ordinary file
+      - \- is an ordinary file
     - -♦♦♦------ - These positions designate the permissions for the owner, the specific user
     - ----♦♦♦--- - These positions designate the permissions for the group, is a users is a part of the group
     - -------♦♦♦ - These positions designate the permissions for anyone
      - First position in all 3 is the READ permissions
       - r means read is enabled
-      - - means it is disabled
+      - \- means it is disabled
      - Second position is the WRITE permissions
       - w means write permissions are enabled
      - Third position is the EXCUTE permissions
@@ -180,10 +180,10 @@ $ ls -l /bin/bash
   - STDOUT
   - STDERR
 - Piping
-  - | used to send the output of one command to the input of another
+  - \| used to send the output of one command to the input of another
   - Some commands will have to specify STDIN as the input, usually with -
 - Redirection
-  - > - Used to redirect STDOUT
+  - \> - Used to redirect STDOUT
   - 2> - Used to redirect STDERR
   - 2>&1 - Used to redirect STDERR to STDOUT
   - tee - command to output to a file and STDOUT at the same time
