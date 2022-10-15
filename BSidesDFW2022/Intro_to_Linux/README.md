@@ -1,4 +1,4 @@
-# Introduction to Kali Linux
+# Introduction to Kali Linux - 2 hours
 
 A fast paced introduction to the Linux operating system.  Learn to understand how Linux environments are most commonly set up.  Learn how to use the command line to explore the system, manipulate files, install/upgrade applications, and more.  This course is based on Kali Linux, but most aspects will extend to most Linux distributions.  
 * This Course is a precursor to the other 2 classes taught by Lee Heath, ‘Introduction to Nmap’ and ‘Wifi Hacking with Wireshark’.
@@ -93,6 +93,39 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
         - -r - reverse sorting
     - file - identify a FILE
 
+## File Permissions
+- What are file permissions?
+  - ```
+$ ls -l /etc/services
+-rw-r--r-- 1 root root 12813 Mar 27  2021 /etc/services
+$ ls -l /bin/bash
+-rwxr-xr-x 1 root root 1234376 Aug  4  2021 /bin/bash
+```
+  - Positions in the ls
+    - ♦--------- - First is the file type
+      - d is a directory
+      - b is a block special file
+      - c is a character special file
+      - l is a symbolic link
+      - p is a first-in,first-out (FIFO)
+      - s is a local socket
+      - - is an ordinary file
+    - -♦♦♦------ - These positions designate the permissions for the owner, the specific user
+    - ----♦♦♦--- - These positions designate the permissions for the group, is a users is a part of the group
+    - -------♦♦♦ - These positions designate the permissions for anyone
+     - First position in all 3 is the READ permissions
+      - r means read is enabled
+      - - means it is disabled
+     - Second position is the WRITE permissions
+      - w means write permissions are enabled
+     - Third position is the EXCUTE permissions
+      - x means execute permissions are enabled
+  - /etc/services is readable by anyone and writable by root
+  - /bin/bash is readable and executable by anyone and writable by root
+- chown
+- chmod
+- chgrp
+
 ## Directory Structure
 - Common places
     - /etc - config
@@ -156,9 +189,6 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
 - Chaining Commands
 
 
-## File Permissions
-- chown
-- chmod
 
 ## Job management
 - ^z  
