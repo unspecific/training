@@ -23,7 +23,7 @@ Have you heard of Nmap but don’t really know where to start?  Maybe you have r
 Nmap is easy to get started with.  ALl you have to do is provide a target.
 - Input - IP or FQDN
 - Output - Displaying ports that are open
-- Root vs user
+- Root vs user - Scan types change
 
 ## Interpreting Scan Data
 ```
@@ -41,8 +41,8 @@ PORT     STATE SERVICE
 
 ## Scan types
 - -s means Scan type
-- List Scan (-sL)
-- Ping Scan (-sn for No port scan)
+- List Scan (-sL) - Display what would be scanned, can be used to expand CIDR notation
+- Ping Scan (-sn for No port scan) - Report which hosts are up, Default is TCP Connect scan on 80
 
 # Ping types
 - Ping determins whether or not to port scan a host
@@ -55,15 +55,23 @@ PORT     STATE SERVICE
 ## Scan Types (Cont)
 There are more options.  We will only cover common scan types.
 - TCP Connect (-sT) - Default when not root
-- TCP SYN (-sS)
+- TCP SYN (-sS) - Can only be used as root - half handshake
 - UDP (-sU)
-- Protocol (-sO)
+- Protocol (-sO) - Can only be used as root - Instead of ports scans for what protocols are available on target
+
+## Target Specific Options
+- Scan ports - Defaults to top 1000 commonly detected ports specified by nmap
+- Specify Ports (-p)
+  - Allows for a list of single ports or ranges, comma separated (-p1-1023,3306,3389,8080)
+  - Can mix TCP and UDP (-p T:80,443,U:53)
+- Fast Scan (-F) only uses the top 100 ports
+- Specify how many ports (--top-ports <#>)
 
 ## Other Scan Options
 - Traceroute (--traceroute)
 - Don't resolve DNS (-n)
 - Do it all (-A)
-- Timing (-T) - Speed up or slow down scans
+- Timing (-T) - Speed up or slow down scans 1-5, 1 slowest - 5 fastest
 - Verbosity (-v -vv -vvv) - Include more details with each increase
 
 ## Input Options
