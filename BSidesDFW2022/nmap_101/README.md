@@ -75,9 +75,15 @@ There are more options.  We will only cover common scan types.
 - Verbosity (-v -vv -vvv) - Include more details with each increase
 
 ## Input Options
-- Lists
-- Random
-- Source
+- Input options are signified by -i
+- Lists (-iL<filename>) - SPecify a file that has a list of IPs, networks, or FQDNs (or mixture of)
+- Random (-iR<#>) - Choose random targets
+- Default is the last entries are the targets, supports multiple formats
+  - IPs (192.169.1.10)
+  - FQDNs (scanme.nmap.org) - Will do a DNS lookup to determine the IP.  Will chose the first entry if multiple IPs are returned
+  - CIDR Notation (10.0.0.0/8, 192.168.0.0/16) - Will expand to a list of IPs.  See -iL to verify the IPs included
+  - Ranges - (192.168.10-20.- 192.168.13.1-20 192.168.13,166,170-180.1) This can get complicated but is very powerful
+  - These input options can be used together on in an input file. CIDR and ranges can be included together for example
 
 ## Output formats
 - Output Files
