@@ -39,10 +39,6 @@ PORT     STATE SERVICE
 1900/tcp open  upnp
 ```
 
-## Ping Types
-- Echo
-- Syn
-
 ## Scan types
 - -s means Scan type
 - List Scan (-sL)
@@ -81,6 +77,11 @@ There are more options.  We will only cover common scan types.
 - XML
 - Standard
 
+## Interpreting Advanced Scan Data
+- open vs filtered vs closed
+- OS Fingerprinting
+- Service Fingerprinting
+- Script output
 
 
 ## Conclusions
