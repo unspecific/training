@@ -29,9 +29,22 @@ Have you heard of Nmap but don’t really know where to start?  Maybe you have r
 - Syn
 
 ## Scan types
-- Connect
-- Syn
-- Fin
+- -s means Scan type
+- List Scan (-sL)
+- Ping Scan (-sn for No port scan)
+
+# Ping types
+- Ping determins whether or not to port scan a host
+- -P means Ping Type
+  - No Ping (-Pn) Assume all hosts are up
+  -  
+
+## Scan Types (Cont)
+There are more options.  We will only cover common scan types.
+- TCP Connect (-sT) - Default when not root
+- TCP SYN (-sS)
+- UDP (-sU)
+- Protocol (-sO)
 
 ## Input Options
 - Lists
