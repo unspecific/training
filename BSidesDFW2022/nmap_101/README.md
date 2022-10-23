@@ -47,3 +47,7 @@ Have you heard of Nmap but don’t really know where to start?  Maybe you have r
 ## Conclusions
 
 ## Q&A
+- madhat@unspecific.com
+- Twitter: @unspecific
+- Counter.Social: @unspecific
+- GitHub: https://github.com/unspecific/training/tree/main/BSidesDFW2022/nmap_101

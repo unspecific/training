@@ -115,3 +115,7 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 ## Conclusions
 
 ## Q&A
+- madhat@unspecific.com
+- Twitter: @unspecific
+- Counter.Social: @unspecific
+- GitHub: https://github.com/unspecific/training/tree/main/BSidesDFW2022/Intro_to_Wireshark-Inspecting_Wifi
