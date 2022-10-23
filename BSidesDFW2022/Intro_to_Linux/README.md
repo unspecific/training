@@ -11,7 +11,7 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
 - Learn to install Linux
 - Learn Standard interfaces
 - Identify and understand common command line tools
-- Fell confident using Linux
+- Feel confident using Linux
 - Figure out how to escape vi/vim
 
 ## Installation

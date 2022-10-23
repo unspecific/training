@@ -21,8 +21,9 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 ## Installation
 - Tools
   - iwconfig/ipconfig/ip
-  - Wireshare (Wireshark.org)
+  - Wireshark (Wireshark.org)
   - airomon-ng
+  - airodump-ng
   - aircrack-ng
 
 ## Running Wireshark
@@ -47,6 +48,8 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
   - Output
   - Options
 - Adding/Removing Columns
+  - Apply as Column
+- Wireless -> Wireless Traffic Analysis
 
 ## Wireshark Capture Filters vs Display Filters
 - Capture filter limit what is actually captured and can be saved
@@ -61,7 +64,7 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 ## WiFi Basics
 - airomon-ng
 - Packet Types
--
+- airodump-ng
 
 ## Capturing a Handshake
 
