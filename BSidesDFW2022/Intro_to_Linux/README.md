@@ -197,18 +197,25 @@ $ ls -l /bin/bash
   - tee - command to output to a file and STDOUT at the same time
 - Chaining Commands
 
-
-
 ## Job management
-- ^z  
-- bg
-- fg
-- jobs
+Purpose of this section to show how to release the terminal to allow command to run in the background
+- jobs - To show what is tied to this terminal session that is running in the background
+  - Running
+  - Paused
+- ^z and &  to release the terminal for user input
+- bg  - Background an app
+- fg  - Foreground an app
 
 ## Conclusions
+With modern desktops available for Linux it is easier than ever to use it for your laptop or desktop machine like you would Windows or Mac.
+Linux is the most widely used operating system for servers on the Internet, so knowing how to move around on the CLI is critical if you want to work in an IT role.
+Linux allows a lot more control than other OSs allowing a use much more power, that can be used for amny purposes, but also means you are more likely to make a mistake that can cause a critical failure.
 
 ## Q&A
-
+- madhat@unspecific.com
+- Twitter: @unspecific
+- Counter.Social: @unspecific
+- GitHub: https://github.com/unspecific/training/tree/main/BSidesDFW2022/Intro_to_Linux
 
 # Bonus: How to exit vim
 - How to exit VI/VIM
