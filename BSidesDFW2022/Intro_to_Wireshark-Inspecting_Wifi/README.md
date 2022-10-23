@@ -113,6 +113,9 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
   - Usernames and Passwords
 
 ## Conclusions
+Wireshark is a very powerful protocol analyzer.  What we did here today is an example of how to monitor a network without directly accessing the network, show what the true dangers of simple pre-shared key based networks are.  Using something like 802.1x and certs would be much more secure, but a lot more difficult to manage.
+Wireshark can be used to not only monitor the traffic but decrypt the packets when properly configured.
+Wireshark lends itself to not only monitoring but also debugging and troubleshooting, and can be used in real-time or process saves packet captures.
 
 ## Q&A
 - madhat@unspecific.com
