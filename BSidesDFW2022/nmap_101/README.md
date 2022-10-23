@@ -13,16 +13,31 @@ Have you heard of Nmap but don’t really know where to start?  Maybe you have r
 - Experience nmap scripting and the power of
 
 ## Introduction
-- What is nmap
-- History of nmap
-- Nmap book
+- What is nmap -  Nmap is a Network Mapper that started as a simple Port Scanner and has sense grown to incorporate many more details about the target
+- History of nmap - Nmap is first released in Phrack magazine Issue 51, Article 11. It doesn't have a version number because new releases were not planned. Nmap was about 2,000 lines long
+- Official Nmap book -  Published on January 1, 2009 https://nmap.org/book/
 - Installation
+  - https://nmap.org/download.html
 
 ## Basic Scans
-- Input
-- Output
-- Timing
+Nmap is easy to get started with.  ALl you have to do is provide a target.
+- Input - IP or FQDN
+- Output - Displaying ports that are open
 - Root vs user
+
+## Interpreting Scan Data
+```
+$ nmap 192.168.170.1
+Starting Nmap 7.80 ( https://nmap.org ) at 2022-10-23 11:30 CDT
+Nmap scan report for _gateway (192.168.170.1)
+Host is up (0.0053s latency).
+Not shown: 996 closed ports
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+443/tcp  open  https
+1900/tcp open  upnp
+```
 
 ## Ping Types
 - Echo
@@ -37,7 +52,9 @@ Have you heard of Nmap but don’t really know where to start?  Maybe you have r
 - Ping determins whether or not to port scan a host
 - -P means Ping Type
   - No Ping (-Pn) Assume all hosts are up
-  -  
+  - ICMP Echo Request (-Pe)
+  - SYN on a Port (-PS<port>) - non-root will use Connect
+  - ARP (-PR) - Default for local LAN --disable-arp-ping to disable
 
 ## Scan Types (Cont)
 There are more options.  We will only cover common scan types.
@@ -45,6 +62,13 @@ There are more options.  We will only cover common scan types.
 - TCP SYN (-sS)
 - UDP (-sU)
 - Protocol (-sO)
+
+## Other Scan Options
+- Traceroute (--traceroute)
+- Don't resolve DNS (-n)
+- Do it all (-A)
+- Timing (-T) - Speed up or slow down scans
+- Verbosity (-v -vv -vvv) - Include more details with each increase
 
 ## Input Options
 - Lists
@@ -56,6 +80,8 @@ There are more options.  We will only cover common scan types.
 - Grepable
 - XML
 - Standard
+
+
 
 ## Conclusions
 
