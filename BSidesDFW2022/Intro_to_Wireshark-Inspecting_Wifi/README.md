@@ -5,21 +5,57 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 * Laptop needed for hands on.
 
 
-Introduction
+## Introduction
 - RedTeam Exercise with the Goal of monitoring the network, without leaving fingerprints on that Network
 - Wireshark (formally Ethereal) for Analyzing the traffic and different protocols
 - Always another way
-Installation
-- tools
+
+## Goals
+- Wireshare UI
+- Find WiFi Network
+- Identify traffic necessary to get WiFi "password"
+- Crack that Password
+- Monitor WiFi network without being seen
+- Identify interesting and useful traffic
+
+## Installation
+- Tools
+  - iwconfig/ipconfig/ip
   - Wireshare (Wireshark.org)
-  -
-Running Wireshark
+  - airomon-ng
+  - aircrack-ng
+
+## Running Wireshark
 - Root vs User
-Monitor/Promiscuous  Mode
-UI Basics
-Wireshark Display Filters vs Capture Filters
-WiFi Basics
-Capturing a Handshake
-WiFi Passwords vs PSK
-WiFi Session Keys
-Network/WiFi Monitoring
+- CLI vs Alt-F2
+
+## Interface Mode
+- Standard vs Promiscuous vs Monitor
+  - Standard - Only what is meant for you + Broadcast
+  - Promiscuous - All IP traffic on your subnet that is delivered to you
+  - Monitor - All network traffic that you can see (dependent on frequency)
+
+## UI Basics
+- Zones in Wireshark
+  - Packet List
+  - Packet Details
+  - Packet Bytes
+- Preferences
+  - Layout
+  - Name Resolution
+- Capture Options
+  - Output
+  - Options
+
+
+## Wireshark Display Filters vs Capture Filters
+
+## WiFi Basics
+
+## Capturing a Handshake
+
+## WiFi Passwords vs PSK
+
+## WiFi Session Keys
+
+## Network/WiFi Monitoring
