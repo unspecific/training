@@ -11,7 +11,7 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 - Always another way
 
 ## Goals
-- Wireshare UI
+- Learn Wireshark UI
 - Find WiFi Network
 - Identify traffic necessary to get WiFi "password"
 - Crack that Password
@@ -48,9 +48,20 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
   - Options
 
 
-## Wireshark Display Filters vs Capture Filters
+## Wireshark Capture Filters vs Display Filters
+- Capture filter limit what is actually captured and can be saved
+  - pcap/tcpdump syntax
+  - https://wiki.wireshark.org/CaptureFilters
+  - https://www.tcpdump.org/manpages/pcap-filter.7.html
+- Display filters limit what is shown in Wireshark without modifying the packets captured
+  - Wireshark specific syntax
+  - https://wiki.wireshark.org/DisplayFilters
+  - <right-click> -> Apply as Filter is your Friend
 
 ## WiFi Basics
+- airomon-ng
+- Packet Types
+- 
 
 ## Capturing a Handshake
 
