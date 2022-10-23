@@ -43,3 +43,7 @@ Have you heard of Nmap but don’t really know where to start?  Maybe you have r
 - Grepable
 - XML
 - Standard
+
+## Conclusions
+
+## Q&A

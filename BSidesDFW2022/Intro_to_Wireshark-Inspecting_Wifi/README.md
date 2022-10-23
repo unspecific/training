@@ -20,15 +20,17 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 
 ## Installation
 - Tools
-  - iwconfig/ipconfig/ip
-  - Wireshark (Wireshark.org)
-  - airomon-ng
-  - airodump-ng
-  - aircrack-ng
+  - iwconfig/ipconfig/ip (net-tools, iproute2, wireless-tools)
+  - Wireshark (Wireshark.org, wireshark)
+  - airmon-ng (aircrack-ng)
+  - airodump-ng (aircrack-ng)
+  - aircrack-ng (aircrack-ng)
+  - wpa_passphrase (wpasupplicant)
+
 
 ## Running Wireshark
 - Root vs User
-- CLI vs Alt-F2
+- CLI vs Alt-F2/Menu
 
 ## Wifi Interface Mode
 - Standard vs Promiscuous vs Monitor
@@ -49,7 +51,7 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
   - Options
 - Adding/Removing Columns
   - Apply as Column
-- Wireless -> Wireless Traffic Analysis
+- Wireless -> WLAN Traffic
 
 ## Wireshark Capture Filters vs Display Filters
 - Capture filter limit what is actually captured and can be saved
@@ -63,13 +65,53 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 
 ## WiFi Basics
 - airomon-ng
-- Packet Types
+  - Channel Hopping - Loses packets
+  - Specifying Channel - Collect more packets
 - airodump-ng
+- Packet Types
+  - Beacons (type 0x0008)
+  - Probe-Requests (type 0x0004)
+  - Probe-Response (type 0x0005)
+  - Data (type 0x0020)
+  - Acknowledgment (type 0x001d)  
+  - Authentication (type 0x000b)
+  - Key/EAPOL
+
+## Identify Target
+- Select Channel
+  - Monitor traffic
+  - Update airomon-ng
+- Identify Beacon && Router
+  - Select SSID
+  - Wireshark Display Filters
+- Identify all Traffic to and from Target
+  - Wireshark Display Filters
 
 ## Capturing a Handshake
+- Key/EAPOL packets
+  - 4 Packet Handshake
+- Beacons
+- Exporting as pcapng file
+
+## Crack That Password
+- aircrack-ng
+- Dictionary/Wordlists
+  - Rockyou
+- Tada!!!
 
 ## WiFi Passwords vs PSK
-
-## WiFi Session Keys
+- Wireshark Preferences
+  - IEEE 802.11
+  - wpa-pass
+  - wpa-psk
+    - wpa_passphrase (SSID, Passphrase)
 
 ## Network/WiFi Monitoring
+- DNS Traffic
+- What other traffic
+- Plain Text protocols
+  - Usernames and Passwords
+
+## Conclusions
+
+## Q&A

@@ -205,6 +205,11 @@ $ ls -l /bin/bash
 - fg
 - jobs
 
+## Conclusions
+
+## Q&A
+
+
 # Bonus: How to exit vim
 - How to exit VI/VIM
     - Hit <esc> to make sure you are not in input mode
