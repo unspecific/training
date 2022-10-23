@@ -6,6 +6,14 @@ A fast paced introduction to the Linux operating system.  Learn to understand ho
 * Live USBs will be provided.
 * Laptop needed for hands on.
 
+## Goals
+- Learn what Linux is
+- Learn to install Linux
+- Learn Standard interfaces
+- Identify and understand common command line tools
+- Fell confident using Linux
+- Figure out how to escape vi/vim
+
 ## Installation
 - Follow the prompts
 - Live Boot vs Install

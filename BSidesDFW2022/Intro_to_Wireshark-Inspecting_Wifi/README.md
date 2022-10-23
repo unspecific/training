@@ -29,7 +29,7 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 - Root vs User
 - CLI vs Alt-F2
 
-## Interface Mode
+## Wifi Interface Mode
 - Standard vs Promiscuous vs Monitor
   - Standard - Only what is meant for you + Broadcast
   - Promiscuous - All IP traffic on your subnet that is delivered to you
@@ -46,7 +46,7 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 - Capture Options
   - Output
   - Options
-
+- Adding/Removing Columns
 
 ## Wireshark Capture Filters vs Display Filters
 - Capture filter limit what is actually captured and can be saved
@@ -61,7 +61,7 @@ This introduction to Wireshare, the powerful protocol analyzer, will explain the
 ## WiFi Basics
 - airomon-ng
 - Packet Types
-- 
+-
 
 ## Capturing a Handshake
 

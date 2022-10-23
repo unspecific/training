@@ -5,6 +5,13 @@ Have you heard of Nmap but don’t really know where to start?  Maybe you have r
 * Laptop needed for hands on.
 
 
+## Goals
+- Identify what Nmap is
+- List practical uses
+- Understand what nmap can do
+- Learn nmap Options
+- Show nmap scripting and the power of
+
 ## Introduction
 - What is nmap
 - History of nmap
